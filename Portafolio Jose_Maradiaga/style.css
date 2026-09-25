@@ -1,0 +1,63 @@
+body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .tarjeta {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+        }
+        .dark .tarjeta {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            background: #e2e8f0;
+        }
+        .dark .etiqueta {
+            background: #334155;
+        }
+
+        .campo {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #cbd5e1;
+            background: transparent;
+        }
+        .campo:focus {
+            outline: 2px solid #0284c7;
+            outline-offset: 1px;
+        }
+        .dark .campo {
+            border-color: #475569;
+        }
+
+        .filtro {
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #cbd5e1;
+        }
+        .dark .filtro {
+            border-color: #475569;
+        }
+        .filtro.activo {
+            background: #0284c7;
+            border-color: #0284c7;
+            color: #ffffff;
+        }
+
+        #texto-typing::after {
+            content: '|';
+            animation: parpadeo 1s infinite;
+        }
+        @keyframes parpadeo {
+            50% { opacity: 0; }
+        }
