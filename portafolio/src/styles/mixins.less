@@ -1,0 +1,17 @@
+.contenedor() {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.boton(@bg, @bg-hover, @color) {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background: @bg;
+  color: @color;
+  &:hover { background: @bg-hover; }
+}

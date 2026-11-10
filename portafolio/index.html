@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Maradiaga | Desarrollador Web</title>
+    <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-luna" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+        <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
+        <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+        <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+        <symbol id="i-correo" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol>
+        <symbol id="i-codigo" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
+        <symbol id="i-bd" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+        <symbol id="i-movil" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+    </svg>
+
+    <header class="cabecera">
+        <div class="cabecera-barra">
+            <a href="#inicio" class="logo">Jose Maradiaga</a>
+
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="acciones">
+                <button id="btn-tema" type="button" aria-label="Cambiar tema" class="btn-icono">
+                    <svg class="icono icono-luna"><use href="#i-luna"/></svg>
+                    <svg class="icono icono-sol"><use href="#i-sol"/></svg>
+                </button>
+                <button id="btn-menu" type="button" aria-label="Abrir menú" class="btn-icono btn-menu">
+                    <svg class="icono"><use href="#i-menu"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="menu-movil" class="menu-movil hidden">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="inicio-grid">
+            <div class="inicio-texto">
+                <p class="texto-tenue">Estudiante de Ingeniería en Ciencias de la Computación</p>
+                <h1 class="inicio-titulo">Hola, soy Jose Armando Maradiaga Meza</h1>
+                <div class="typing"><span id="texto-typing"></span></div>
+                <p class="descripcion texto-suave">
+                    Hago páginas web y sistemas con base de datos. Me muevo tanto en el frontend como en el backend
+                    y estoy buscando prácticas o proyectos donde seguir aprendiendo.
+                </p>
+
+                <div class="botones">
+                    <a href="#proyectos" class="btn">Ver proyectos</a>
+                    <a href="#contacto" class="btn-borde">Contactarme</a>
+                </div>
+
+                <div class="redes">
+                    <!-- TODO: cambiar por mis links reales -->
+                    <a href="https://github.com" target="_blank" rel="noopener" title="GitHub"><svg class="icono"><use href="#i-github"/></svg></a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><svg class="icono"><use href="#i-linkedin"/></svg></a>
+                    <a href="mailto:josearmandomaradiagameza825@gmail.com" title="Correo"><svg class="icono"><use href="#i-correo"/></svg></a>
+                </div>
+            </div>
+
+            <div class="foto-caja">
+                <img src="/src/foto.jpg" alt="Foto de Jose Armando Maradiaga Meza" class="foto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="seccion seccion-alt">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+
+            <div class="grid-2">
+                <div class="tarjeta formacion">
+                    <h3>Formación</h3>
+                    <p class="texto-suave">
+                        Soy estudiante avanzado de <strong>Ingeniería en Ciencias de la Computación</strong>.
+                        En la carrera he visto algoritmos, estructuras de datos y lógica, y trato de llevarlo
+                        a la práctica haciendo proyectos web.
+                    </p>
+                    <p class="texto-suave">
+                        Lo que más me interesa es cómo se organiza una aplicación web y cómo se modelan las
+                        bases de datos, tanto relacionales como no relacionales.
+                    </p>
+                </div>
+
+                <div class="lista">
+                    <div class="tarjeta dato">
+                        <svg class="icono"><use href="#i-codigo"/></svg>
+                        <div>
+                            <h4>Desarrollo web Full-Stack</h4>
+                            <p class="texto-suave">Sitios dinámicos, APIs REST y aplicaciones de una sola página.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta dato">
+                        <svg class="icono"><use href="#i-bd"/></svg>
+                        <div>
+                            <h4>Bases de datos</h4>
+                            <p class="texto-suave">Diseño de tablas en SQL y consultas.</p>
+                        </div>
+                    </div>
+                    <div class="tarjeta dato">
+                        <svg class="icono"><use href="#i-movil"/></svg>
+                        <div>
+                            <h4>Desarrollo móvil</h4>
+                            <p class="texto-suave">Interfaces responsivas y apps Android con Jetpack Compose.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Habilidades</h2>
+
+            <div class="grid-3">
+                <div class="tarjeta habilidad">
+                    <h3>Frontend</h3>
+                    <div class="etiquetas">
+                        <span class="etiqueta">HTML</span>
+                        <span class="etiqueta">CSS</span>
+                        <span class="etiqueta">LESS</span>
+                        <span class="etiqueta">JavaScript</span>
+                        <span class="etiqueta">Vite</span>
+                        <span class="etiqueta">Jetpack Compose</span>
+                    </div>
+                </div>
+                <div class="tarjeta habilidad">
+                    <h3>Backend y bases de datos</h3>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Node.js</span>
+                        <span class="etiqueta">Express</span>
+                        <span class="etiqueta">MySQL</span>
+                        <span class="etiqueta">MongoDB</span>
+                        <span class="etiqueta">Firebase</span>
+                    </div>
+                </div>
+                <div class="tarjeta habilidad">
+                    <h3>Otras herramientas</h3>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Git / GitHub</span>
+                        <span class="etiqueta">C# / .NET</span>
+                        <span class="etiqueta">FileMaker Pro</span>
+                        <span class="etiqueta">Linux (Bash)</span>
+                        <span class="etiqueta">APIs REST</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="seccion seccion-alt">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Proyectos</h2>
+
+            <div class="filtros">
+                <button class="filtro activo" data-filtro="todos">Todos</button>
+                <button class="filtro" data-filtro="web">Web</button>
+                <button class="filtro" data-filtro="juegos">Juegos</button>
+                <button class="filtro" data-filtro="sistemas">Sistemas y BD</button>
+            </div>
+
+            <!-- TODO: poner los links reales de demo y código en cada proyecto -->
+            <div class="grid-proyectos">
+                <article class="proyecto tarjeta" data-categoria="juegos">
+                    <h3>Cazador de Tesoros y Atrapa el Círculo</h3>
+                    <p class="texto-suave">Dos juegos hechos con JavaScript puro, manejando el DOM y los eventos directamente.</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">HTML</span>
+                        <span class="etiqueta">CSS</span>
+                        <span class="etiqueta">JavaScript</span>
+                    </div>
+                    <div class="enlaces">
+                        <a href="#">Ver demo</a>
+                        <a href="#">Ver código</a>
+                    </div>
+                </article>
+
+                <article class="proyecto tarjeta" data-categoria="sistemas">
+                    <h3>Sistema de agenda y contactos</h3>
+                    <p class="texto-suave">Aplicación para guardar contactos: crear, editar, borrar y buscar, con inicio de sesión de usuarios.</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">Node.js</span>
+                        <span class="etiqueta">Express</span>
+                        <span class="etiqueta">MongoDB</span>
+                    </div>
+                    <div class="enlaces">
+                        <a href="#">Ver demo</a>
+                        <a href="#">Ver código</a>
+                    </div>
+                </article>
+
+                <article class="proyecto tarjeta" data-categoria="sistemas">
+                    <h3>Control de docentes y gestión académica</h3>
+                    <p class="texto-suave">Sistema para llevar el registro de docentes, horarios, materias asignadas y calificaciones.</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">MySQL</span>
+                        <span class="etiqueta">C# / .NET</span>
+                        <span class="etiqueta">FileMaker Pro</span>
+                    </div>
+                    <div class="enlaces">
+                        <a href="#">Ver demo</a>
+                        <a href="#">Ver código</a>
+                    </div>
+                </article>
+
+                <article class="proyecto tarjeta" data-categoria="web">
+                    <h3>La Web del Futuro: Web 3.0 y 4.0</h3>
+                    <p class="texto-suave">Sitio informativo sobre cómo está evolucionando la web hacia la Web 3.0 y la Web 4.0.</p>
+                    <div class="etiquetas">
+                        <span class="etiqueta">HTML</span>
+                        <span class="etiqueta">CSS</span>
+                        <span class="etiqueta">JavaScript</span>
+                    </div>
+                    <div class="enlaces">
+                        <a href="#">Ver demo</a>
+                        <a href="#">Ver código</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Contacto</h2>
+            <p class="texto-suave intro-contacto">Si tienes un proyecto o una oportunidad de práctica, escríbeme.</p>
+
+            <div class="grid-2-contacto">
+                <div class="lista">
+                    <div class="tarjeta dato-contacto">
+                        <small class="texto-tenue">Correo</small>
+                        <a href="mailto:josearmandomaradiagameza825@gmail.com"><strong>josearmandomaradiagameza825@gmail.com</strong></a>
+                    </div>
+                    <div class="tarjeta dato-contacto">
+                        <small class="texto-tenue">Ubicación</small>
+                        <strong>Siguatepeque, Comayagua, Honduras</strong>
+                    </div>
+                    <div class="tarjeta dato-contacto">
+                        <small class="texto-tenue">Disponibilidad</small>
+                        <strong>Abierto a proyectos y prácticas</strong>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <!-- Por ahora el formulario no envía nada, falta conectarlo (Formspree, EmailJS o un backend propio) -->
+                    <form action="#" method="POST" class="formulario">
+                        <div class="fila">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required class="campo">
+                            </div>
+                            <div>
+                                <label for="email">Correo</label>
+                                <input type="email" id="email" name="email" required class="campo">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required class="campo">
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required class="campo"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-bloque">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pie texto-tenue">
+        <p>&copy; 2026 Jose Armando Maradiaga Meza</p>
+    </footer>
+</body>
+</html>
